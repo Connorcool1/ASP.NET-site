@@ -5,17 +5,12 @@ using WebApp.Services;
 
 namespace WebApp.Services;
 
-public class ProductsDAO : IProductDataService
+public class ProductsDAO
 {
     readonly string table = "dbo.Products";
 
     string connectionString = @"Data Source=localhost;Initial Catalog = Test; Integrated Security = True; 
     Encrypt=True;TrustServerCertificate=True;";
-
-    public int Delete(ProductModel product)
-    {
-        throw new NotImplementedException();
-    }
 
     public List<ProductModel> GetProducts(string column, object value)
     {
@@ -255,6 +250,57 @@ public class ProductsDAO : IProductDataService
         else {
             return 0;
         }
+    }
+
+    public bool Delete(int productID) {
+        bool success = false;
+
+        string sqlStatement = $"DELETE FROM {table} WHERE ID = @ID"; 
+
+        using (SqlConnection connection = new SqlConnection(connectionString)) {
+            SqlCommand command = new SqlCommand(sqlStatement, connection);
+            command.Parameters.AddWithValue("@ID", productID);
+
+            try {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                success = true;
+
+                Console.WriteLine("Success");
+
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        return success;
+    }
+
+    public bool Delete(ProductModel product) {
+        return Delete(product.ID);
+    }
+
+    public bool DeleteAll() {
+                bool success = false;
+
+        string sqlStatement = $"DELETE FROM {table}"; 
+
+        using (SqlConnection connection = new SqlConnection(connectionString)) {
+            SqlCommand command = new SqlCommand(sqlStatement, connection);
+
+            try {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                success = true;
+
+                Console.WriteLine("Success");
+
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        return success;
     }
 
     public void SetStock(ProductModel product, int stock) {

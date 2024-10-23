@@ -83,4 +83,28 @@ public class ProductController : BaseShopController {
         }
         return View(product);
     }
+
+    public IActionResult Populate()
+    {
+        ProductPopulator productPopulator = new ProductPopulator();
+
+        productPopulator.PopulateDatabase();
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(int productId) {
+        ProductsDAO productsDAO = new ProductsDAO();
+
+        productsDAO.Delete(productId);
+
+        return RedirectToAction("Index");
+    }
+
+        public IActionResult DeleteAll(int productId) {
+        ProductsDAO productsDAO = new ProductsDAO();
+
+        productsDAO.DeleteAll();
+
+        return RedirectToAction("Index");
+    }
 }

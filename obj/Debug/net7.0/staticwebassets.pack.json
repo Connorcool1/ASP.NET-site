@@ -53,6 +53,42 @@
       "PackagePath": "staticwebassets\\images\\products\\cart.png"
     },
     {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\ant.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\ant.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\beetle.png",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\beetle.png"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\bird.png",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\bird.png"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\bug.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\bug.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\fire ant queen.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\fire ant queen.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\gold beetle.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\gold beetle.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\golddd beetle.avif",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\golddd beetle.avif"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\queen ant.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\queen ant.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\images\\products\\productImage\\rare beetle.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\productImage\\rare beetle.jpg"
+    },
+    {
       "Id": "c:\\Users\\Connor\\Mess\\ASP.NET-site\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
