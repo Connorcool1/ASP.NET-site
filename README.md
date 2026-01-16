@@ -46,15 +46,6 @@ Simple page informing the user that their items have been successfully ordered.
 ![checkoutpage](readme-images/checkoutpage.png)
 
 
-
-## Login system
-# STATUS: ONGOING
-
-This is to be integrated with other projects.
-
-Users are able to register and login as an admin. 
-TODO - This allows for the changing of products present on the e-commerce shop.
-
 ## Blog page
 # STATUS: ONGOING
 
