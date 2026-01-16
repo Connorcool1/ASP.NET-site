@@ -13,6 +13,8 @@ public class ProductController : BaseShopController {
         ProductsDAO productsDAO = new ProductsDAO();
         List<ProductModel> productsList = productsDAO.GetAllProducts();
 
+        if (productsList )
+
         return View("~/Views/MockPages/Products/Index.cshtml", productsList);
     }
 

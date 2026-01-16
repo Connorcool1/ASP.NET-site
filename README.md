@@ -7,7 +7,7 @@ This project is a local website that I will use to store future coding projects.
 # Projects:
 
 ## E-commerce shop
-### STATUS: COMPLETED (FUTURE UPDATES PLANNED)
+### STATUS: COMPLETED
 
 A mock online shop developed using ASP.NET Core. Pretends to sell bugs. Users are able to browse and order products, admins are able to create, update, and delete products.
 
